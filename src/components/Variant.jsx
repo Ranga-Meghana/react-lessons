@@ -1,7 +1,8 @@
 import React from "react";
+
 export default function Variant() {
   return (
-    <div>
+    <div className="App-Variant-Box">
       <p>Following variants are available:</p>
       <ul>
         <li>Black</li>
