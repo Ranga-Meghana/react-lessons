@@ -1,0 +1,13 @@
+.App-Product-Container {
+    display: flex;
+    justify-content: center;
+}
+
+.App-Product-Box {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f5f5f5; 
+    border: 1px solid #e0e0e0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 8px; 
+}
