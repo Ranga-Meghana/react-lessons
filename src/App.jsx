@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import App1 from "./components/App1";
 import App2 from "./components/App2";
+import App3 from "./components/App3";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
