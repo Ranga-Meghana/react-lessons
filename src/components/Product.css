@@ -1,27 +1,28 @@
-.App-Product-Container {
-    display: flex;
-    justify-content: center;
-}
-
 .App-Product-Box {
     margin: 15px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 300px;
     background: linear-gradient(to right, #fef6e4, #e8f0fe); 
     color: #6b5e62; 
     border: 1px dotted #d3cce3; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.App-Product-Box:hover {
+    transform: translateY(-5px);
 }
 
 button {
-    padding: 10px;
+    padding: 10px 15px;
     background: #ffffff;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 1px dotted #ffcfd2; 
     font-weight: bold;
     color: #7a6f85; 
     margin-left: 0px;
+    cursor: pointer;
     transition: background 0.3s ease, color 0.3s ease;
 }
 

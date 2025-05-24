@@ -1,14 +1,13 @@
 import React from "react";
-
 export default function Variant() {
   return (
-    <div className="App-Variant-Box">
+    <div>
       <p>Following variants are available:</p>
       <ul>
-        <li>Black</li>
-        <li>Red</li>
-        <li>Maroon</li>
-        <li>Orange</li>
+        <li style={{color:'black'}}>Black</li>
+        <li style={{color:'darkred'}}>Cherry Red</li>
+        <li style={{color:'lavender'}}>Lavender</li>
+        <li style={{color:'pink'}}>Pink</li>
       </ul>
     </div>
   );

@@ -1,3 +1,10 @@
-.App-Footer-Row{
-    background-color: rgb(98, 186, 208);
+.App-Footer-Row {
+    margin-top: 360px;
+    background: linear-gradient(to right, #fef6e4, #e8f0fe); 
+    color: #6b5e62; 
+    padding: 8px;
+    font-weight: bold;
+    border-top: 1px dotted #d3cce3; 
+    text-align: center;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
 }
