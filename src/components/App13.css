@@ -1,0 +1,28 @@
+.App13-Row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(to right, #ffecd2, #fcb69f); 
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.App13-Row div {
+    background: radial-gradient(circle at top left, #ffa500, #ff7f50);
+    margin: 0;
+    padding: 15px 25px;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(255, 165, 0, 0.4);
+    transition: transform 0.2s ease;
+}
+
+.App13-Row div:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(255, 165, 0, 0.6);
+}
