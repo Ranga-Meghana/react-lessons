@@ -1,4 +1,4 @@
-import React, { useState, createContext } from "react";
+import React, { createContext, useState } from "react";
 import Register from "./Register";
 import Login from "./Login";
 
@@ -6,36 +6,33 @@ export const AppContext = createContext();
 
 export default function App21() {
   const [users, setUsers] = useState([]);
-  const [view, setView] = useState(""); 
+  const [view, setView] = useState("home");
 
-  const containerStyle = {
-    textAlign: "center",
-    marginTop: "100px",
-    fontFamily: "Arial",
-  };
-
-  const buttonStyle = {
-    margin: "10px",
-    padding: "10px 20px",
-    fontSize: "16px",
-    borderRadius: "5px",
-    border: "1px solid #ccc",
-    cursor: "pointer",
-  };
+  const goBack = () => setView("home");
 
   return (
     <AppContext.Provider value={{ users, setUsers }}>
-      <div style={containerStyle}>
-        {view === "" && (
-          <>
-            <h2>Welcome! Choose an option:</h2>
-            <button style={buttonStyle} onClick={() => setView("login")}>Login</button>
-            <button style={buttonStyle} onClick={() => setView("register")}>Register</button>
-          </>
-        )}
-        {view === "register" && <Register />}
-        {view === "login" && <Login />}
-      </div>
+      {view === "home" && (
+        <div style={{ textAlign: "center", marginTop: "50px" }}>
+          <h1 style={{ fontFamily: "Georgia", fontSize: "36px", color: "#333" }}>User Portal</h1>
+          <button onClick={() => setView("register")} style={homeBtnStyle}>Register</button>
+          <button onClick={() => setView("login")} style={homeBtnStyle}>Login</button>
+        </div>
+      )}
+      {view === "register" && <Register goBack={goBack} />}
+      {view === "login" && <Login goBack={goBack} />}
     </AppContext.Provider>
   );
 }
+
+const homeBtnStyle = {
+  padding: "12px 24px",
+  margin: "20px",
+  fontSize: "16px",
+  backgroundColor: "#4CAF50",
+  color: "#fff",
+  border: "none",
+  borderRadius: "8px",
+  cursor: "pointer",
+  boxShadow: "0 4px 6px rgba(0,0,0,0.1)"
+};
