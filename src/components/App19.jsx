@@ -62,10 +62,6 @@ export default function App19() {
             {gameOver && <button onClick={handleReset} className="reset-button">Restart Game</button>}
           </div>
         </div>
-
-        {confetti && (
-          <div className="confetti">🎉🎊🏏</div>
-        )}
       </div>
     </>
   );
