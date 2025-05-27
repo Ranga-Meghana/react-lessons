@@ -14,7 +14,7 @@ export default function App21() {
     <AppContext.Provider value={{ users, setUsers }}>
       {view === "home" && (
         <div style={{ textAlign: "center", marginTop: "50px" }}>
-          <h1 style={{ fontFamily: "Georgia", fontSize: "36px", color: "#333" }}>User Portal</h1>
+          <h1 style={{ fontFamily: "Georgia", fontSize: "36px", color: "#333" }}>Welcome!</h1>
           <button onClick={() => setView("register")} style={homeBtnStyle}>Register</button>
           <button onClick={() => setView("login")} style={homeBtnStyle}>Login</button>
         </div>
