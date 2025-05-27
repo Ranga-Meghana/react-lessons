@@ -21,7 +21,7 @@ import App17 from "./components/App17";
 import App18 from "./components/App18";
 import App19 from "./components/App19";
 import App20 from "./components/App20";
-import App21 from "./components/App20";
+import App21 from "./components/App21";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
