@@ -1,0 +1,64 @@
+.app-container {
+  text-align: center;
+  padding: 30px;
+  background: #fff6f8;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.score-sec {
+  margin-top: 20px;
+}
+
+.score-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.score-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.score-button {
+  padding: 10px 20px;
+  background-color: #ff9aa2;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.score-button:hover {
+  background-color: #f67280;
+}
+
+.reset-button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #6c5b7b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reset-button:hover {
+  background-color: #533f5d;
+}
+
+.confetti {
+  font-size: 2.5rem;
+  animation: bounce 0.6s ease-in-out infinite;
+  margin-top: 20px;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
