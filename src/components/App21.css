@@ -1,0 +1,71 @@
+.animated-title {
+  color: #d86c7a;
+  font-size: 2.5rem;
+  text-align: center;
+  animation: fadeSlideDown 1s ease-in-out;
+  margin-top: 20px;
+}
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.app-container {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.box {
+  width: 45%;
+  padding: 20px;
+  border: 2px solid #d86c7a;
+  border-radius: 10px;
+  background-color: #fff0f3;
+}
+
+.user-list {
+  padding: 20px;
+  border-top: 2px solid #d86c7a;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #fff0f3;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 12px rgba(216, 108, 122, 0.3);
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  background-color: #d86c7a;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
