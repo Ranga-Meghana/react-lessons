@@ -1,15 +1,21 @@
 .animated-title {
   color: #d86c7a;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   text-align: center;
   animation: fadeSlideDown 1s ease-in-out;
   margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.animated-title:hover {
+  transform: scale(1.05);
+  color: #c25467;
 }
 
 @keyframes fadeSlideDown {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   to {
     opacity: 1;
@@ -20,52 +26,84 @@
 .app-container {
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #fff5f7, #ffe2e7);
+  min-height: 100vh;
+  transition: background 0.5s ease;
 }
 
 .section-container {
   display: flex;
   justify-content: space-around;
+  gap: 30px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .box {
   width: 45%;
-  padding: 20px;
+  padding: 25px;
   border: 2px solid #d86c7a;
-  border-radius: 10px;
+  border-radius: 12px;
   background-color: #fff0f3;
+  box-shadow: 0 4px 12px rgba(216, 108, 122, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(216, 108, 122, 0.3);
 }
 
 .user-list {
   padding: 20px;
   border-top: 2px solid #d86c7a;
+  background-color: #fff5f7;
+  border-radius: 12px;
+  animation: fadeSlideUp 0.8s ease;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .user-item {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px;
-  margin-bottom: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
   background-color: #fff0f3;
-  border-radius: 8px;
+  border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .user-item:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 12px rgba(216, 108, 122, 0.3);
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(216, 108, 122, 0.25);
 }
 
 .avatar {
-  width: 35px;
-  height: 35px;
+  width: 38px;
+  height: 38px;
   background-color: #d86c7a;
   color: white;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.avatar:hover {
+  background-color: #c25467;
 }
